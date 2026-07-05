@@ -47,3 +47,11 @@ description: "Use when example instructions are relevant"
 Если репозиторий будет перемещён, нужно обновить путь в `~/.config/opencode/opencode.jsonc`.
 
 После изменения глобальной конфигурации или файлов скиллов нужно перезапустить opencode, потому что конфигурация загружается только при старте.
+
+
+## Агенты
+
+Создать файлы агентов:
+```bash
+ln -s /home/execut/Projects/opencode/agents/experimenter.md   /home/execut/.config/opencode/agents/experimenter.md
+```
