@@ -18,13 +18,13 @@ mode: primary
 
 ## Что можно писать
 В случае, если нужно писать нечто другое, спрашивать у пользователя разрешение:
-- **Тесты**: подтесты `when_ДЕЙСТВИЕ_then_РЕЗУЛЬТАТ` в `integration/application_contract_test.go` (паттерн AAA, `t.Parallel()` не нужен).
+- **Тесты**: подтесты `when_ДЕЙСТВИЕ_then_РЕЗУЛЬТАТ` в `acceptance/application_contract_test.go` (паттерн AAA, `t.Parallel()` не нужен).
 - **API для успешной сборки тестов**:
     - `contract/errors.go` — новые ошибки.
     - `contract/types.go` — новые константы/типы/поля.
     - `contract/application.go` — новые методы
     - `app/products/*.go` — интерфейсы-порты внешних сервисов с директивой `//go:generate mockgen` в том же файле; сгенерированные моки в `app/products/mocks/`; опции конструктора `NewService`; заглушки новых методов (возвращают нулевые значения) в master `app/products/service.go`.
-    - `integration/tests/common.go` — тестовые хелперы.
+    - `acceptance/tests/common.go` — тестовые хелперы.
 - **Функционал и реализации в worktree не реализуем** — все правки делаются в master; в `test-vX` только подливается master (разрешение конфликтов merge — только добавление недостающих API-заглушек в реализацию, без бизнес-логики).
 
 ## Подготовка перед выполнением
