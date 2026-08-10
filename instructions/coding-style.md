@@ -14,11 +14,12 @@ description: "Использовать везде при написании ко
 ```
 	for _, variant := range testApplicationVariants {
 		variant := variant
+		variantName := variant.Name
 ```
 ТАК НУЖНО:
 ```
 	for _, variant := range testApplicationVariants {
-		variant := variant
+		variantName := variant.Name
 ```
 - В случае если в названии пакета несколько слов, их нужно разделять через _
 - В случае если в названии пакета несколько слов, его в названии папки должны быть дефисы "-" вместо пробелов
