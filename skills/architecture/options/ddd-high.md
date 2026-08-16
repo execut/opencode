@@ -1,5 +1,4 @@
 # DDD high
-
 Обязательные опции: ddd-light, business-events, application-layer, read-model, repository, states, subscribers-and-dispatchers, value-objects, pseudo-cqrs, optimistic-locking
 
 DDD high - это самый навороченный вариант архитектуры на базе подхода DDD

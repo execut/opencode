@@ -1,5 +1,4 @@
 # Полноценный CQRS (cqrs)
-
 Обязательные опции: pseudo-cqrs
 
 `cqrs` — это полноценное разделение write-side и read-side моделей.

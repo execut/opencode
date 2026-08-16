@@ -2,9 +2,7 @@
 
 В репозитории скиллы лежат в директории `skills/`:
 
-- `skills/coding-style/SKILL.md`
-- `skills/tests/SKILL.md`
-- `skills/ddd/SKILL.md`
+- `skills/architecture/SKILL.md`
 
 Чтобы эти скиллы были доступны из любой папки, я подключил их через глобальную конфигурацию opencode.
 
@@ -54,4 +52,6 @@ description: "Use when example instructions are relevant"
 Создать файлы агентов:
 ```bash
 ln -s /home/execut/Projects/opencode/agents/experimenter.md   /home/execut/.config/opencode/agents/experimenter.md
+ln -s /home/execut/Projects/opencode/agents/tdd.md   /home/execut/.config/opencode/agents/tdd.md
+ln -s /home/execut/Projects/opencode/agents/tasks-maker.md   /home/execut/.config/opencode/agents/tasks-maker.md
 ```
